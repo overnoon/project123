@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>harikitte-ikou</title>
+</head>
+<body>
+    <img src="https://gametora.com/images/umamusume/supports/tex_support_card_30028.png" alt="Clickable Image" id="clickable-img" style="cursor:pointer;">
+    <audio id="sound" src="https://us-tuna-sounds-files.voicemod.net/b83cda6a-d30f-4a62-83c1-5abcf9198bd8-1755351137580.mp3"></audio>
+    <script>
+        const img = document.getElementById('clickable-img');
+        const sound = document.getElementById('sound');
+        img.addEventListener('click', () => {
+            sound.currentTime = 0;
+            sound.play();
+        });
+    </script>
+</body>
+</html>
